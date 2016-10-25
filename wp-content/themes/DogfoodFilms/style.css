@@ -1,0 +1,162 @@
+/*
+Theme Name: My First Theme
+Author: jonherbertwebdeveloper.co.uk
+Author URI: http://jonherbertwebdeveloper.co.uk
+Description: This is my first Wordpress theme working from the Complete Wordpress Theme Tutorial series on Udemy.
+Version: 1.0
+Tags: blue, twitter bootstrap, 2 columns, SEO, woocomerce, search-engine friendly, custom colors, 3 sidebars, mobile, responsive, multi-column
+*/
+
+body {
+    margin: 0;
+    background: #ddd;
+    font-family: 'Courgette', cursive;
+}
+
+
+/* HOMEPAGE */
+
+.homepage-body {
+    background: #000;
+    text-align: center;
+}
+
+.homepage-logo {
+    text-align: center;
+    margin: 2vw auto;
+    width: 45%;
+}
+
+.homepage-enter img {
+    width: 10%;
+    margin: 2vw auto;
+}
+
+
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: inline-block;
+    width: 80%;
+    margin: 5% auto 1%;
+}
+
+
+/*  GROUPING  */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 */
+}
+
+
+/*  GRID OF THREE  */
+
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.13%;
+}
+
+.span_1_of_3 {
+    width: 32.26%;
+}
+
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_3_of_3,
+    .span_2_of_3,
+    .span_1_of_3 {
+        width: 100%;
+    }
+}
+
+.searchform input[type="submit"] {
+    background: #3399ff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header {
+    background: #f5f5f5;
+    width: 100%;
+    min-height: 50px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 0;
+}
+
+.header-image {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 10vw;
+}
+
+.header-description {
+    position: absolute;
+    top: 0;
+    left: 10vw;
+    color: #000;
+}
+
+.menu-header-menu-container {
+    margin: 0vw 10vw;
+}
+
+.menu-item {
+    text-decoration: none;
+    float: right;
+    list-style: none;
+    margin: 0vw 1vw;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #3399ff;
+}
+
+footer {
+    background: #dddddd;
+    width: 100%;
+    min-height: 50px;
+    color: #3399ff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px dotted #000;
+}
+
+img.img-responsive.responsive-full.wp-post-image {
+    width: 250px;
+    height: 250px;
+}
